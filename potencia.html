@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./img/logo-icon.png"
+            type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <script defer src="script.js"></script>
+        <title>AuctionCar</title>
+    </head>
+    <body>
+
+        <header class="display-flex">
+            <figure>
+                <img class="logo" src="./img/logo.png" alt="logo AuctionCar">
+            </figure>
+            <nav class="content-nav align-items-center">
+                <ul class="display-flex">
+                    <li class="header-nav-padrao">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="header-nav-padrao">
+                        <a href="potencia.html">Potência</a>
+                    </li>
+                    <li class="header-nav-confortabilidade">
+                        <a href="confortabilidade.html">Confortabilidade</a>
+                    </li>
+                    <li class="a-leilao">
+                        <a href="leilao.html">Leilão</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="display-none" id="menu-hamburguer">
+                <img src="img/menu-hamburguer.png" alt="">
+            </div>
+        </header>
+
+        <section id="container-tela-potencia">
+            <div class="tela-potencia">
+                <span class="container-titulo-com-sombra">
+                    <h1 class="titulo-potencia">
+                        <i>
+                            POTÊNCIA
+                        </i>
+                    </h1>
+                    <h1 class="opacity-baixa sombra-titulo-potencia">
+                        <i>
+                            POTÊNCIA
+                        </i>
+                    </h1>
+                    <div class="linha"></div>
+                </span>
+
+                <!--Container da apresentação da tela potencia-->
+
+                <div class="container-apresentacao-potencia display-flex color-white">
+                    <div class="container-links">
+                        <a href="javascript:trocarPotencia()"><div
+                                class="elemento-link"></div></a>
+                        <figure class="exposicao display-flex align-items-center
+                            justify-content-center">
+                            <h1 class="troca text-element-potencia"><i>Geral</i></h1>
+                            <h1 class="troca hidden-ativo
+                                text-element-potencia"><i>Cavalos</i></h1>
+                            <img class="troca" id="geral-potencia"
+                                src="img/torque-icon.png" alt="...">
+                            <img class="troca hidden-ativo"
+                                id="cavalos-potencia"
+                                src="img/cavalos-icon.png" alt="">
+                        </figure>
+                    </div>
+                    <div class="apresentacao-potencia troca">
+
+                        <h2 id="apresentacao-potencia-txt">
+                            O Audi R8 is simply dummy text of the printing and
+                            typesetting
+                            industry. <br> Lorem Ipsum has been the industry's
+                            standard dummy
+                            text ever since the 1500s,<br> when an unknown
+                            printer
+                            took a galley
+                        </h2>
+                        <img id="apresentacao-potencia-img-carro"
+                            src="img/fundo-potencia.png" alt="Imagem do
+                            Audi">
+                    </div>
+                    <div class="apresentacao-potencia troca hidden-ativo">
+                        <div class=" display-flex apresentacao-potencia-motor">
+                            <img class="troca hidden-ativo"
+                                id="apresentacao-potencia-img-motor"
+                                src="img/motor.png" alt="">
+                            <ul id="ul-potencia">
+                                <li>
+                                    O Audi R8 is simply Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                </li>
+                                <li>
+                                    O Audi R8 is simply Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                </li>
+                                <li>
+                                    O Audi R8 is simply Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./img/logo-icon.png"
+            type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+        <script defer src="script.js"></script>
+        <title>Cadastro</title>
+    </head>
+    <body>
+
+        <header class="p-relative justify-content-center align-items-center
+            display-flex"
+            id="header-cadastro">
+            <a href="leilao.html">
+                <img id="voltar-cadastro" src="img/Arrows-Back-icon.png" alt="">
+            </a>
+            <img id="logo-cadastro" src="img/logo.png" alt="logo">
+
+        </header>
+
+        <form class="display-flex align-items-center justify-content-center"
+            action="#">
+            <div class="dados" id="dados-pessoais">
+                <div class="p-relative" id="nome">
+                    <input required class="input-dados" placeholder="" id="name" name="nome"
+                        type="text">
+                    <label class="label-animado" for="name">Nome</label>
+                </div>
+                <div class="p-relative" id="d-cpf">
+                    <input required class="input-dados" id="cpf" name="cpf" type="text">
+                    <label for="cpf">CPF</label>
+                </div>
+            </div>
+            <div class="dados" id="dados-contato">
+                <div class="p-relative" id="d-email">
+                    <input class="input-dados" required id="email" name="nome"
+                        type="text">
+                    <label for="email">E-mail</label>
+                </div>
+                <div class="p-relative" id="telefone">
+                    <input required class="input-dados" id="tel" name="nome" type="tel">
+                    <label for="tel">Telefone</label>
+                </div>
+            </div>
+            <div class="p-relative dados" id="dados-valor">
+                <input class="input-dados" required id="valor" name="Valor"
+                    type="number">
+                <label id="label-valor" for="valor">Valor do lance</label>
+                <button onclick="msg()" class="btn-cadastro" type="submit">Enviar</button>
+            </div>
+        </form>
+    </body>
+</html>

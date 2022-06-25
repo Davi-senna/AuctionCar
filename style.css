@@ -1,0 +1,923 @@
+body {
+
+    height: 100vh;
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+#body-extended {
+    height: 100% !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800&family=Roboto+Condensed:wght@300&display=swap');
+
+/*Tags*/
+header {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+ul {
+    flex-direction: row;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.header-nav-padrao {
+    width: 20vw;
+}
+
+.header-nav-confortabilidade {
+    margin-left: 8vw;
+    width: 27vw;
+    justify-content: left;
+}
+
+
+
+h1, h2, h3 {
+    margin: 0px;
+    color: white;
+}
+
+
+
+html::-webkit-scrollbar {
+    width: 2px;
+    border: none;
+
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 2px;
+
+}
+
+form {
+    width: 100vw;
+    margin-top: 6vw;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+input {
+    outline: none;
+    width: 25vw;
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px white solid;
+    display: inline-block;
+    color: white;
+    padding: 0.5vw 0.5vw;
+    font-size: 1.2vw;
+    transition: all .3s ease-out;
+    margin-bottom: 5vw;
+}
+
+input:focus~label, input:valid~label {
+    font-size: 0.6vw;
+    top: -0.7vw;
+    left: 0 !important;
+}
+
+input:valid {
+    border-bottom: 1px rgb(30, 255, 0) solid;
+}
+
+/* input:invalid{
+    border-bottom: 1px rgb(255, 0, 0) solid;
+} */
+
+/*Classes globais:*/
+
+.display-none {
+    display: none;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.color-black {
+    color: black;
+}
+
+/*images:*/
+
+.fundo-car {
+    margin-top: 1.5vw;
+    width: 65vw;
+
+}
+
+
+.logo {
+    width: 11vw;
+    margin-left: 10px;
+}
+
+.image-confortabilidade {
+    margin-top: 2vw;
+}
+
+.container-fundo-car {
+    width: 80%;
+}
+
+.arrow {
+    width: 3vw;
+    margin: 1vw;
+}
+
+.arrow:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+#geral-potencia {
+    width: 50%;
+}
+
+#cavalos-potencia {
+    width: 50%;
+}
+
+#apresentacao-potencia-img-carro {
+    width: 64%;
+}
+
+#apresentacao-potencia-img-motor {
+    width: 25vw;
+}
+
+.slide-confortabilidade {
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    width: 25%;
+    transition: .4s;
+}
+
+.img-box {
+    width: 25vw;
+}
+
+.img-venda {
+    margin-top: 3vw;
+    width: 50vw;
+}
+
+#logo-cadastro {
+    width: 20vw;
+}
+
+#voltar-cadastro {
+    position: absolute;
+    left: 2vw;
+    width: 2vw;
+}
+
+/*Textos e afins:*/
+
+label {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    font-size: 1.3vw;
+    top: 0.5vw;
+    left: 0;
+    transition: .4s;
+}
+
+#label-valor {
+    left: 33%;
+}
+
+
+
+#ul-potencia li {
+    list-style: outside !important;
+    font-size: 1vw;
+    text-align: left;
+    margin-bottom: 1vw;
+
+}
+
+.ul-potencia{
+    display: flex;
+}
+
+.titulo-potencia {
+    font-size: 7vw;
+}
+
+.titulo-confortabilidade {
+    font-size: 4.5vw;
+}
+
+
+.opacity-baixa {
+    opacity: .1;
+}
+
+.sombra-titulo-potencia {
+    position: absolute;
+    top: 1vw;
+    left: 1vw;
+    font-size: 8.5vw;
+}
+
+.sombra-titulo-confortabilidade {
+    position: absolute;
+    top: 9vw;
+    left: 6vw;
+    font-size: 5.5vw;
+}
+
+
+.color-white {
+    color: white;
+}
+
+.text-element-potencia {
+    color: black;
+    font-size: 2.8vw;
+}
+
+#apresentacao-potencia-txt {
+    font-size: 1.2vw;
+    margin-bottom: 3vw;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.title-compra {
+    font-size: 2.5vw;
+}
+
+.title-acessorios {
+    margin-top: 8vw;
+    font-size: 2.5vw;
+}
+
+.title-box {
+    font-size: 1.3vw;
+    color: black;
+}
+
+.title-venda {
+    font-size: 2vw;
+}
+
+#time {
+    font-size: 1.4vw;
+    margin: 1vw 0 2vw 0;
+}
+
+#title-maiores-lances {
+    font-size: 2vw;
+    margin-left: 10vw;
+}
+
+.valor-rank {
+    opacity: .5;
+    font-size: 1.2vw;
+}
+
+.title-rank {
+    font-size: 1.6vw;
+}
+
+.posicao-rank {
+    margin: 0;
+    font-size: 1.2vw;
+}
+
+/*Containers:*/
+
+
+
+.dados {
+    justify-content: center;
+    align-items: center;
+}
+
+#dados-pessoais {
+    width: 40vw;
+    margin-left: 14vw;
+}
+
+#dados-contato {
+    width: 40vw;
+}
+
+#dados-valor {
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-nav {
+    justify-content: end;
+    display: flex;
+    width: 84vw;
+    font-size: 1.7vw;
+}
+
+.paragrafo-info {
+    margin-top: 4vw;
+    font-size: 1.3vw;
+}
+
+.container-apresentacao {
+    color: white;
+    align-items: center;
+    flex-direction: column;
+    font-size: 28px;
+    width: 40%;
+    margin-left: 5vw;
+}
+
+.apresentacao-potencia {
+    width: 60%;
+    margin-top: 8.5vw;
+    text-align: center;
+}
+
+
+.apresentacao-confortabilidade {
+    margin-top: 7vw;
+    width: 45vw;
+    text-align: center;
+    font-size: 0.9vw;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container-links {
+    margin-top: 8.8vw;
+    position: relative;
+    width: 30vw;
+}
+
+.container-titulo-com-sombra {
+    position: relative;
+}
+
+.apresentacao-txt {
+    /*Container do titulo da home*/
+    font-size: 1.9vw;
+    flex-direction: column;
+    margin-top: 10vw;
+    margin-bottom: 1.6vw;
+    align-items: center;
+}
+
+.container-slider {
+    width: 31vw;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+
+.container-fundo-leilao {
+    width: 100%;
+    flex-direction: column;
+}
+
+.fundo-leilao {
+    width: 80%;
+    margin-left: 30px;
+}
+
+.fundo-leilao-img {
+    width: 90%;
+}
+
+.container-rank {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.exposicao {
+    flex-direction: column;
+}
+
+#container-tela-potencia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+#container-tela-home {
+    display: flex;
+    align-items: center;
+    height: 80%;
+}
+
+#container-tela-confortabilidade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+}
+
+#container-box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 5vw;
+}
+
+.box-acessorio {
+    text-align: center;
+    margin-bottom: 5vw;
+}
+
+.box-left {
+    margin-right: 20vw;
+}
+
+#container-leilao-time {
+    margin-top: 7vw;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#venda-leilao {
+    height: 85vw;
+}
+
+#maiores-lances {
+    margin-top: 7vw;
+}
+
+.rank {
+    height: 37vw;
+    align-items: flex-end;
+    display: flex;
+    margin-left: 2vw;
+    flex-direction: row;
+}
+
+.container-elemento-rank {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 5vw;
+}
+
+.container-valor-rank {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 60%;
+}
+
+.container-posicao-rank {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 40%;
+}
+
+/*Elementos:*/
+
+#slider {
+    display: flex;
+    width: 400%;
+    height: 27.27vw;
+    overflow: hidden;
+    border-radius: 7px;
+}
+
+#balls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 0.4vw;
+}
+
+.img-atual {
+    background-color: white;
+}
+
+.ball-link {
+    border: white 0.12vw solid;
+    width: 0.7vw;
+    height: 0.7vw;
+    border-radius: 40px;
+    margin-right: 0.6vw;
+}
+
+
+.ativo {
+    text-decoration: underline;
+}
+
+
+.elemento-link {
+    position: absolute;
+    width: 17vw;
+    height: 13vw;
+    opacity: .5;
+    background-color: rgb(155, 154, 154);
+    order: 2;
+}
+
+.exposicao {
+    width: 17vw;
+    height: 13vw;
+    position: absolute;
+    top: 5vw;
+    left: 8vw;
+    background-image: linear-gradient(135deg, #808080, #D6CECE);
+
+}
+
+.linha {
+    background-color: white;
+    width: 13vw;
+    height: 1px;
+    margin-top: 4vw;
+    opacity: .4;
+}
+
+.btn-poligon {
+    width: 15.5vw;
+    height: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 1.4vw;
+    clip-path: polygon(23% 0%, 100% 0, 75% 100%, 0% 100%);
+}
+
+.btn-leilao {
+    width: 12vw;
+    height: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    border: solid white 1px;
+    font-size: 1.2vw;
+}
+
+.btn-cadastro {
+    width: 12vw;
+    height: 2.5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: white;
+    border: solid white 1px;
+    font-size: 1.2vw;
+}
+
+.btn-cadastro:hover {
+    cursor: pointer;
+}
+
+
+.btn-poligon:hover {
+    background-color: #d1d6cd;
+}
+
+.btn-poligon:active {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    border: solid 1px white;
+}
+
+.borda-arredondada {
+    border-radius: 10px;
+}
+
+.arrow-right {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.button-poligon {
+    background-color: transparent;
+    border: 0;
+}
+
+.elemento-rank {
+    width: 15vw;
+    background-color: white;
+}
+
+#posicao4 {
+    height: 10vw;
+}
+
+#posicao3 {
+    height: 15vw;
+}
+
+#posicao2 {
+    height: 20vw;
+}
+
+#posicao1 {
+    height: 25vw;
+}
+
+/* slider */
+
+.next-element {
+    margin-left: -25%;
+}
+
+.back-element {
+    margin-left: 25%;
+}
+
+
+
+
+/*Telas:*/
+
+.tela-home {
+    margin-top: 2vw;
+}
+
+.tela-potencia {
+    margin-left: 10vw;
+    margin-top: 2vw;
+    width: 90vw;
+}
+
+.tela-confortabilidade {
+    margin-top: 5vw;
+}
+
+.tela-leilao {
+    margin-top: 3vw;
+    flex-direction: row;
+}
+
+.container-tela-info {
+    margin-top: 5vw;
+    background-color: white;
+    width: 100%;
+    height: 80vw;
+    color: black !important;
+
+}
+
+.tela-info {
+    margin: 6vw 0 0 10vw;
+}
+
+/*Medias*/
+
+@media(max-width: 520px) {
+    .content-nav {
+        display: none;
+    }
+
+    .logo {
+        width: 30vw;
+    }
+
+    #menu-hamburguer {
+        display: flex;
+        width: 65vw;
+        justify-content: flex-end;
+    }
+
+    #menu-hamburguer img {
+        margin-top: 2vw;
+        width: 14vw;
+        height: 12vw;
+    }
+
+    .container-apresentacao {
+        order: 0;
+    }
+
+    .container-fundo-car {
+        order: 1;
+    }
+
+    .tela-home {
+        flex-direction: column;
+    }
+
+    .fundo-car {
+        width: 90vw;
+        margin-top: 10vw;
+    }
+
+    .apresentacao-txt {
+        font-size: 3.5vw;
+        justify-content: center;
+
+    }
+
+    .container-apresentacao {
+        width: 90vw;
+    }
+
+    body {
+        height: 97vh;
+    }
+
+    .btn-poligon {
+        width: 25vw;
+        height: 5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        color: black;
+        font-size: 2vw;
+        clip-path: polygon(23% 0%, 100% 0, 75% 100%, 0% 100%);
+    }
+
+    .container-apresentacao-potencia {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-links {
+        order: 1;
+    }
+
+    .apresentacao-potencia {
+        order: 0;
+    }
+
+    .tela-potencia {
+        width: 100vw;
+        
+    }
+
+    #container-tela-potencia {
+        align-items: flex-start;
+        margin-top: 5vw;
+    }
+
+    .titulo-potencia {
+        font-size: 10vw;
+    }
+
+    .sombra-titulo-potencia {
+        font-size: 12vw;
+    }
+
+    .container-apresentacao-potencia {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4vw;
+        margin-right: 10vw;
+    }
+
+    .apresentacao-potencia{
+        width: 80vw;
+    }
+
+    #apresentacao-potencia-txt {
+        font-size: 2vw;
+        margin-bottom: 5vw;
+    }
+
+    #apresentacao-potencia-img-carro{
+        width: 70vw;
+    }
+
+    .container-links{
+        height: 20vw;
+        margin-top: 6vw;
+    }
+
+    #apresentacao-potencia-img-motor{
+        width: 30vw;
+    }
+
+    #ul-potencia{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 6vw;
+    }
+
+    #ul-potencia li {
+        font-size: 1.6vw;
+    }
+
+    .container-apresentacao-confortabilidade{
+      flex-direction: column;
+    }
+
+    #container-tela-confortabilidade {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 80%;
+    }
+
+    .container-titulo-com-sombra-confortabilidade{
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        margin-left: 20vw;
+        margin-top: 5vw;
+    }
+
+    .tela-confortabilidade{
+        width: 100vw;
+    }
+
+    .titulo-confortabilidade{
+        font-size: 6vw;
+    }
+
+    .sombra-titulo-confortabilidade{
+        top: 1.6vw;
+        left: 0;
+        font-size: 6.5vw;
+    }
+
+    .container-apresentacao-confortabilidade{
+        display: flex;
+        align-items: center;
+    }
+
+    .apresentacao-confortabilidade{
+        font-size: 1.4vw;
+        width: 70vw;
+        margin-top: 10vw;
+    }
+
+    .arrow{
+        width: 5vw;
+    }
+
+    .arrow-right{
+        width: 5vw;
+    }
+
+    .container-slider {
+        width: 50vw;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .image-confortabilidade{
+        margin-top: 5vw;
+    }
+
+    .apresentacao-potencia-motor{
+        display: block;
+    }
+
+}
