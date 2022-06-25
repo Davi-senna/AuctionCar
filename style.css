@@ -28,10 +28,6 @@ figure {
     margin: 0;
 }
 
-ul {
-    flex-direction: row;
-}
-
 a {
     text-decoration: none;
     color: white;
@@ -180,9 +176,6 @@ input:valid {
     width: 64%;
 }
 
-#apresentacao-potencia-img-motor {
-    width: 25vw;
-}
 
 .slide-confortabilidade {
     width: 100%;
@@ -204,6 +197,14 @@ input:valid {
 }
 
 #logo-cadastro {
+    width: 20vw;
+}
+
+#ul-potencia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 20vw;
 }
 
@@ -239,9 +240,7 @@ label {
 
 }
 
-.ul-potencia{
-    display: flex;
-}
+
 
 .titulo-potencia {
     font-size: 7vw;
@@ -443,7 +442,6 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 80%;
 }
 
 #container-tela-home {
@@ -839,16 +837,11 @@ label {
     }
 
     #apresentacao-potencia-img-motor{
-        width: 30vw;
+        width: 20vw;
+        margin-left: 3vw;
     }
 
-    #ul-potencia{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-right: 6vw;
-    }
+    
 
     #ul-potencia li {
         font-size: 1.6vw;
