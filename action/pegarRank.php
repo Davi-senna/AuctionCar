@@ -4,11 +4,16 @@
 
 
         $conn = new PDO("mysql:host=localhost; dbname=auctioncar", "root", "");
-        $stmt = $conn->prepare("SELECT * FROM lance ORDER BY valor DESC LIMIT 5");
+        $stmt = $conn->prepare("SELECT nome,valor FROM lance ORDER BY valor DESC LIMIT 5");
         $results = $stmt->execute();
         $data = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-        echo json_encode($data);
+        $validate = [
+            'success' => true,
+            'data' => $data
+        ];
+
+        echo json_encode($validate);
 
     } catch (Exception $e) {
 
