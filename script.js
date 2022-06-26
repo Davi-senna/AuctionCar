@@ -102,6 +102,10 @@ $(document).ready(
             dataType: 'json'
         }).done((response)=>{
             console.log(response);
+            alert(response['message']);
+            if(response['success']){
+                window.location.href = "leilao.html"
+            }
         })
     })
 )

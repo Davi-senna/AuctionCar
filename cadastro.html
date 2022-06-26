@@ -33,7 +33,7 @@
                     <label class="label-animado" for="name">Nome</label>
                 </div>
                 <div class="p-relative" id="cpf">
-                    <input onkeypress="$(this).mask('000-000-000.05')" required class="input-dados" id="cpf" name="cpf" type="text">
+                    <input onkeypress="$(this).mask('000-000-000.00')" required class="input-dados" id="cpf" name="cpf" type="text">
                     <label for="cpf">CPF</label>
                 </div>
             </div>
@@ -49,8 +49,8 @@
                 </div>
             </div>
             <div class="p-relative dados" id="dados-valor">
-                <input class="input-dados" required id="valor" name="lance"
-                    type="number">
+                <input class="input-dados" required onkeypress="$(this).mask('0000000000')" id="valor" name="lance"
+                    type="text">
                 <label id="label-valor" for="valor">Valor do lance</label>
                 <button class="btn-cadastro" type="submit">Enviar</button>
             </div>
