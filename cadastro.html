@@ -7,9 +7,9 @@
         <link rel="shortcut icon" href="./img/logo-icon.png"
             type="image/x-icon">
         <link rel="stylesheet" href="style.css">
-        <script defer src="script.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="http://github.com/igorescobar/jQuery-Mask-Plugin/zipball/v1.7.6"></script>
+        <script src="vendor/jquery-mask/dist/jquery.mask.min.js"></script>
+        <script defer src="script.js"></script>
         <title>Cadastro</title>
     </head>
     <body>
@@ -24,35 +24,35 @@
 
         </header>
 
-        <form class="display-flex align-items-center justify-content-center"
+        <form id="form-lance" class="display-flex align-items-center justify-content-center"
             action="#">
             <div class="dados" id="dados-pessoais">
                 <div class="p-relative" id="nome">
-                    <input required class="input-dados" placeholder="" id="name" name="nome"
+                    <input required class="input-dados" id="nome" name="nome"
                         type="text">
                     <label class="label-animado" for="name">Nome</label>
                 </div>
-                <div class="p-relative" id="d-cpf">
-                    <input required class="input-dados" id="cpf" name="cpf" type="text">
+                <div class="p-relative" id="cpf">
+                    <input onkeypress="$(this).mask('000-000-000.05')" required class="input-dados" id="cpf" name="cpf" type="text">
                     <label for="cpf">CPF</label>
                 </div>
             </div>
             <div class="dados" id="dados-contato">
-                <div class="p-relative" id="d-email">
-                    <input class="input-dados" required id="email" name="nome"
+                <div class="p-relative" id="email">
+                    <input class="input-dados" required id="email" name="email"
                         type="text">
                     <label for="email">E-mail</label>
                 </div>
                 <div class="p-relative" id="telefone">
-                    <input onkeypress="(this).mask('(00) 0 0000-0000')" required class="input-dados" id="tel" name="nome" type="tel">
+                    <input onkeypress="$(this).mask('(00) 0 0000-0000')" required class="input-dados" id="tel" name="tel" type="tel">
                     <label for="tel">Telefone</label>
                 </div>
             </div>
             <div class="p-relative dados" id="dados-valor">
-                <input class="input-dados" required id="valor" name="Valor"
+                <input class="input-dados" required id="valor" name="lance"
                     type="number">
                 <label id="label-valor" for="valor">Valor do lance</label>
-                <button onclick="msg()" class="btn-cadastro" type="submit">Enviar</button>
+                <button class="btn-cadastro" type="submit">Enviar</button>
             </div>
         </form>
     </body>

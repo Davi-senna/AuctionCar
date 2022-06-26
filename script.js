@@ -83,12 +83,25 @@ function backImage() {
     dotAtual.classList.add("img-atual")
 }
 
-// const msg = () => {
-//     var inputs = document.querySelectorAll(".input-dados")
-//     console.log
-//     // if(){
 
+//Fazer lance
 
-//     // }
-//     alert("aa")
-// }
+$(document).ready(
+    $("#form-lance").submit((e)=>{
+        e.preventDefault();
+
+        form_data = new FormData(document.getElementById("form-lance"));
+
+        $.ajax({
+            url: "action/fazerProposta.php",
+            type: "POST",
+            cache: false,
+            processData:false,
+            contentType:false,
+            data: form_data,
+            dataType: 'json'
+        }).done((response)=>{
+            console.log(response);
+        })
+    })
+)
